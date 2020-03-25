@@ -6,3 +6,33 @@
   height: 80px;
   border: 2px solid orange;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .container {
+    height: 880px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .container {
+    height: 168px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    height: 84px;
+  }
+}
